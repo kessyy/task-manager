@@ -1,0 +1,27 @@
+<div class="task-dashboard container mt-5">
+  <button class="btn btn-primary mb-3" (click)="addTask()">Create Task</button>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Assigned To</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasks">
+        <td>{{ task.title }}</td>
+        <td>{{ task.description }}</td>
+        <td>{{ task.assignedTo }}</td>
+        <td>{{ task.status }}</td>
+        <td>
+          <button class="btn btn-sm btn-warning" (click)="editTask(task)">Edit</button>
+          <button class="btn btn-sm btn-danger" (click)="deleteTask(task.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <app-task *ngIf="selectedTask" [task]="selectedTask" (taskUpdated)="refreshTasks()"></app-task>
+</div>

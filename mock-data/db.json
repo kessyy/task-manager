@@ -1,0 +1,58 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Task 1",
+      "description": "Description 1",
+      "assignedTo": "User3",
+      "status": "Pending"
+    },
+    {
+      "id": "2",
+      "title": "Task 2",
+      "description": "Description 2",
+      "assignedTo": "User",
+      "status": "In Progress"
+    },
+    {
+      "id": "2a29",
+      "title": "new task",
+      "description": "new description",
+      "assignedTo": "User10",
+      "status": "Pending"
+    },
+    {
+      "id": "8277",
+      "title": "another task",
+      "description": "desknlargerg",
+      "assignedTo": "user8",
+      "status": "Pending",
+      "dueDate": "2024-06-10T19:13:52.942Z"
+    },
+    {
+      "id": "897e",
+      "title": "",
+      "description": "",
+      "assignedTo": "User1",
+      "status": "Pending",
+      "dueDate": "2024-06-10T19:56:09.373Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "user1",
+      "password": "password1"
+    },
+    {
+      "id": "2",
+      "username": "user2",
+      "password": "password2"
+    },
+    {
+      "id": "3",
+      "username": "user3",
+      "password": "password3"
+    }
+  ]
+}
